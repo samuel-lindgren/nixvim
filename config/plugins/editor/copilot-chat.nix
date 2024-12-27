@@ -35,7 +35,7 @@ _: {
       options.desc = "Add tests for my code";
     }
     {
-      key = "<leader>ccq";
+      key = "<leader>cq";
       action = ''
           function()
             local input = vim.fn.input("Quick Chat: ")
@@ -45,9 +45,10 @@ _: {
           end,
         }
       '';
+      options.desc = "Quick chat with your buffer";
     }
     {
-      key = "<leader>cco";
+      key = "<leader>co";
       action = "<CMD>CopilotChatOptimize<CR>";
       options.desc = "Optimize code to improve performance and readability";
     }
