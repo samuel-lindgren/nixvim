@@ -34,5 +34,22 @@ _: {
       action = "<CMD>CopilotChatTests<CR>";
       options.desc = "Add tests for my code";
     }
+    {
+      key = "<leader>ccq";
+      action = ''
+          function()
+            local input = vim.fn.input("Quick Chat: ")
+            if input ~= "" then
+              require("CopilotChat").ask(input, { selection = require("CopilotChat.select").buffer })
+            end
+          end,
+        }
+      '';
+    }
+    {
+      key = "<leader>cco";
+      action = "<CMD>CopilotChatOptimize<CR>";
+      options.desc = "Optimize code to improve performance and readability";
+    }
   ];
 }
