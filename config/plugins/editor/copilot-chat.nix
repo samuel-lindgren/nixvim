@@ -15,7 +15,7 @@ _: {
       options.desc = "Stop current Copilot output";
     }
     {
-      key = "<leader>cr";
+      key = "<leader>cg";
       action = "<CMD>CopilotChatReview<CR>";
       options.desc = "Review the selected code";
     }
